@@ -14,15 +14,17 @@ package apis
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 
-	v1alpha1 "github.com/upbound/upjet-provider-template/apis/null/v1alpha1"
-	v1alpha1apis "github.com/upbound/upjet-provider-template/apis/v1alpha1"
-	v1beta1 "github.com/upbound/upjet-provider-template/apis/v1beta1"
+	v1alpha1 "github.com/shivam-agrawal-30/provider-azuredevops/apis/gitrepository/v1alpha1"
+	v1alpha1project "github.com/shivam-agrawal-30/provider-azuredevops/apis/project/v1alpha1"
+	v1alpha1apis "github.com/shivam-agrawal-30/provider-azuredevops/apis/v1alpha1"
+	v1beta1 "github.com/shivam-agrawal-30/provider-azuredevops/apis/v1beta1"
 )
 
 func init() {
 	// Register the types with the Scheme so the components can map objects to GroupVersionKinds and back
 	AddToSchemes = append(AddToSchemes,
 		v1alpha1.SchemeBuilder.AddToScheme,
+		v1alpha1project.SchemeBuilder.AddToScheme,
 		v1alpha1apis.SchemeBuilder.AddToScheme,
 		v1beta1.SchemeBuilder.AddToScheme,
 	)

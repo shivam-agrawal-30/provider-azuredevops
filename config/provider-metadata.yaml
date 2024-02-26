@@ -1,36 +1,42 @@
-name: hashicorp/null
+name: microsoft/azuredevops
 resources:
-    null_resource:
+    “contributing” Resource - terraform-provider-azuredevops”:
         subCategory: ""
-        description: The null_resource resource implements the standard resource lifecycle but takes no further action. The triggers argument allows specifying an arbitrary set of values that, when changed, will cause the resource to be replaced.
-        name: null_resource
-        title: null_resource Resource - terraform-provider-null
-        examples:
-            - name: cluster
-              manifest: |-
-                {
-                  "connection": [
-                    {
-                      "host": "${element(aws_instance.cluster.*.public_ip, 0)}"
-                    }
-                  ],
-                  "provisioner": {
-                    "remote-exec": [
-                      {
-                        "inline": [
-                          "bootstrap-cluster.sh ${join(\" \", aws_instance.cluster.*.private_ip)}"
-                        ]
-                      }
-                    ]
-                  },
-                  "triggers": {
-                    "cluster_instance_ids": "${join(\",\", aws_instance.cluster.*.id)}"
-                  }
-                }
-              dependencies:
-                aws_instance.cluster: |-
-                    {
-                      "count": 3
-                    }
+        name: “contributing” Resource - terraform-provider-azuredevops”
+        title: “contributing” Resource - terraform-provider-azuredevops”
+        argumentDocs:
+            'Go: Install/Update tools': and select it
+            WIP: (stands for "Work In Progress") in the title. This helps reviewers prioritize which reviews to look at.
+            d *schema.ResourceData: is passed to the provider by Terraform. It contains the resource configuration specified by the client using the provider, along with any data pulled from the Terraform state.
+            data_foo.go: '- an implementation for the Terraform data source for the foo Azure DevOps resource'
+            go.mod: or go.sum files, or the vendor/ directory, please elaborate on why the change is being made.
+            m interface{}: is, in the case of this provider, a structure containing all of the (intialized) clients needed to make API calls to Azure DevOps.
+            resource_foo.go: '- an implementation for the Terraform resource for the foo Azure DevOps resource'
+            terraform-provider-azurerm: provider. While it targets a different provider there are some great findings that you can read about.
+            user.name: and user.email
+        importStatements: []
+    “debugging” Resource - terraform-provider-azuredevops”:
+        subCategory: ""
+        name: “debugging” Resource - terraform-provider-azuredevops”
+        title: “debugging” Resource - terraform-provider-azuredevops”
         argumentDocs: {}
+        importStatements: []
+    “roadmap” Resource - terraform-provider-azuredevops”:
+        subCategory: ""
+        name: “roadmap” Resource - terraform-provider-azuredevops”
+        title: “roadmap” Resource - terraform-provider-azuredevops”
+        argumentDocs: {}
+        importStatements: []
+    “testing” Resource - terraform-provider-azuredevops”:
+        subCategory: ""
+        name: “testing” Resource - terraform-provider-azuredevops”
+        title: “testing” Resource - terraform-provider-azuredevops”
+        argumentDocs:
+            CheckDestroy: checks that, after a terraform destroy is called, that the resource is actually destroyed from AzDO.
+            CreateDefinition: API will be called. If it is, it will return the specified parameters.
+            Finish(): ', which will verify that each expectation (see lines 102-106) set up on the mocks used by the test was met. This will be done after the function exits. See defer behavior in Go'
+            PreCheck: is a function that verifies that the required environment variables are set. The referenced function testutils.PreCheck (note the lowercase p) is defined in commons.go.
+            Providers: is the actual set of providers being tested. The function GetProviders() will construct this for you, and it is defined in commons.go.
+            Steps: is a list of steps that should be run. Each step will execute a terraform apply to apply the terraform stanza defined by the Config property. It then runs the checks specified by the Check property.
+            testutils.GenerateResourceName(): ', is used so that it is easy to identify any orphaned test resources in AzDO. This is defined in commons.go.'
         importStatements: []
