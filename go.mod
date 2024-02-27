@@ -2,8 +2,6 @@ module github.com/shivam-agrawal-30/provider-azuredevops
 
 go 1.21
 
-toolchain go1.21.5
-
 require (
 	dario.cat/mergo v1.0.0
 	github.com/crossplane/crossplane-runtime v1.14.0-rc.0.0.20231011070344-cc691421c2e5
