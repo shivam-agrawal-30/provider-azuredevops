@@ -2,7 +2,7 @@ module github.com/shivam-agrawal-30/provider-azuredevops
 
 go 1.21
 
-toolchain go1.21.5
+<!-- toolchain go1.21.5 -->
 
 require (
 	dario.cat/mergo v1.0.0
