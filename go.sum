@@ -77,8 +77,8 @@ github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46t
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/crossplane/crossplane-runtime v1.14.0-rc.0.0.20231011070344-cc691421c2e5 h1:K1Km6NCu9+VlZB3CmWSjrs09cDSbwQxJd2Qw2002dFs=
 github.com/crossplane/crossplane-runtime v1.14.0-rc.0.0.20231011070344-cc691421c2e5/go.mod h1:kCS5576be8g++HhiDGEBUw+8nkW8p4jhURYeC0zx8jM=
-github.com/crossplane/crossplane-tools v0.0.0-20230925130601-628280f8bf79 h1:HigXs5tEQxWz0fcj8hzbU2UAZgEM7wPe0XRFOsrtF8Y=
-github.com/crossplane/crossplane-tools v0.0.0-20230925130601-628280f8bf79/go.mod h1:+e4OaFlOcmr0JvINHl/yvEYBrZawzTgj6pQumOH1SS0=
+github.com/crossplane/crossplane-tools v0.0.0-20220310165030-1f43fc12793e h1:HqLaMji3FRPwEBA5P6twPz0HbE6no0XOnByLU5O1noM=
+github.com/crossplane/crossplane-tools v0.0.0-20220310165030-1f43fc12793e/go.mod h1:xFf30hwHd5n0/a0D4ZomId8nxQTTjE0Hc1j4/rWxefc=
 github.com/crossplane/upjet v1.2.0 h1:vGV+//ZNN7ym3ClSnoX9YV+GRJJa18gjwvuFl7OpO9A=
 github.com/crossplane/upjet v1.2.0/go.mod h1:0bHLtnejZ9bDeyXuBb9MSOQLvKo3+aoTeUBO8N0dGSA=
 github.com/dave/jennifer v1.4.1 h1:XyqG6cn5RQsTj3qlWQTKlRGAyrTcsk1kUmWdZBzRjDw=
@@ -551,8 +551,8 @@ golang.org/x/sys v0.0.0-20220908164124-27713097b956/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.14.0 h1:Vz7Qs629MkJkGyHxUlRHizWJRG2j8fbQKjELVSNhy7Q=
 golang.org/x/sys v0.14.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
-golang.org/x/term v0.13.0 h1:bb+I9cTfFazGW51MZqBVmZy7+JEJMouUHTUSKVQLBek=
-golang.org/x/term v0.13.0/go.mod h1:LTmsnFJwVN6bCy1rVCoS+qHT1HhALEFxKncY3WNNh4U=
+golang.org/x/term v0.14.0 h1:LGK9IlZ8T9jvdy6cTdfKUCltatMFOehAQo9SRC46UQ8=
+golang.org/x/term v0.14.0/go.mod h1:TySc+nGkYR6qt8km8wUhuFRTVSMIX3XPR58y2lC8vww=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
