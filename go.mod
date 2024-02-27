@@ -1,6 +1,6 @@
 module github.com/shivam-agrawal-30/provider-azuredevops
 
-go 1.21
+go 1.19
 
 require (
 	dario.cat/mergo v1.0.0
